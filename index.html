@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div
+      class="container max-w-md my-5 mx-auto text-center text-gray-700 opacity-50 poiner-event-none"
+    >
+      <h1 class="text-4xl py-4">Weather Forecast</h1>
+      <form class="change-location py-4 text-xl flex flex-col gap-2">
+        <label for="city">Enter a location for weather information</label>
+        <input
+          type="text"
+          name="city"
+          class="w-full border-2 rounded-xl m-auto p-4"
+        />
+      </form>
+      <div class="card shadow-xl rounded-xl bg-slate-50 hidden">
+        <img
+          src="https://via.placeholder.com/400x300"
+          class="time w-full h-full object-cover rounded-t-xl"
+        />
+        <div class="icon mx-auto bg-slate-50">
+          <img src="" alt="" />
+        </div>
+        <div class="details text-lg uppercase">
+          <h5 class="city-name py-3"></h5>
+          <div class="weather-con py-3"></div>
+          <div class="temp py-4">
+            <span></span>
+            <span>&deg;C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
